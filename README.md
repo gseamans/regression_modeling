@@ -1,2 +1,1 @@
-# regression_modeling
-R Brown Bag #4
+# Regression Modeling Brown Bag #4

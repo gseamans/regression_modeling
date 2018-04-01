@@ -1,0 +1,37 @@
+---
+title: "Regression"
+author: "Gary R Seamans"
+date: "2018"
+output:
+  prettydoc::html_pretty:
+    fig_caption: yes
+    highlight: github
+    theme: cayman
+    toc: true
+    toc_depth: 2
+  pdf_document:
+    fig_caption: yes
+    latex_engine: xelatex
+  word_document: default
+  html_document: default
+keep_md: yes
+editor_options:
+  chunk_output_type: inline
+---
+
+```{r setup, echo=TRUE}
+library(knitr)
+library(prettydoc)
+library(ggplot2)
+```
+
+```{r randomNormal}
+x <- seq(5, 15, length=1000)
+y <- dnorm(x, mean=10, sd=3)
+qplot(x, y, colour = I("blue")) + xlab("") + ylab("") +
+    theme(axis.ticks.x = element_blank(),
+          axis.text.x=element_blank(),
+          axis.ticks.y=element_blank(),
+          axis.text.y=element_blank())
+
+```
